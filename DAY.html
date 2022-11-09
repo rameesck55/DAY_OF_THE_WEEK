@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Caveat:wght@700&family=Dancing+Script:wght@700&family=Fuzzy+Bubbles:wght@700&family=Playfair+Display:ital,wght@1,500&family=Shalimar&family=Teko:wght@300&display=swap');
+        </style> 
+    
+</head>
+<body>
+    <div id="container">
+        <h1>Day of Week</h1>
+        <div id="today">
+            <h3>Today is 
+                <p id="screen" style="color:rgb(66, 5, 5) ;font-family: 'Shalimar', cursive;"></p></h3>
+            
+        </div>
+        <div class="button">
+            <button class="date button" onclick="date()">Date</button>
+            <button class="day button" onclick="day()">Day</button>
+            <button class="month button" onclick="month()" >Month</button>
+            <button class="year button" id="y" onclick="year()">Year</button>
+            
+
+
+        </div>
+        
+    </div>
+
+
+
+
+
+    <script>
+        var a =new Date();
+        var b=a.getDate();
+        var d=a.getDay();
+        var y =a.getFullYear();
+        var s=a.getMonth();
+
+        console.log(s)
+        
+     function date(){
+        var c=document.getElementById("screen").innerHTML= b
+     }
+
+
+
+
+
+     function day(){
+       if(d==0){
+        var e=document.getElementById("screen").innerHTML= " SUNDAY"
+
+       }
+       else if(d==1){
+        var e=document.getElementById("screen").innerHTML= "MONDAY"
+       }
+       else if(d==2){
+        var e=document.getElementById("screen").innerHTML= "TUESDAY"
+       }
+       else if(d==3){
+        var e=document.getElementById("screen").innerHTML= " WENDESDAY"
+       }
+       else if(d==4){
+        var e=document.getElementById("screen").innerHTML= "THURSDAY"
+       }
+       else if(d==5){
+        var e=document.getElementById("screen").innerHTML= "FRIDAY"
+       }
+       else if(d==6){
+        var e=document.getElementById("screen").innerHTML= "SATURDAY"
+       }
+
+
+
+
+     }
+     function year(){
+        var r=document.getElementById("screen").innerHTML= y
+     }
+
+
+
+
+
+     function month(){
+        if(s==0){
+            var t=document.getElementById("screen").innerHTML= "JANUARY"
+
+        }
+        else if(s==1){
+            var t=document.getElementById("screen").innerHTML= "FEBRUARY"
+
+        }
+        else if(s==2){
+            var t=document.getElementById("screen").innerHTML= "MARCH"
+
+        }
+        else if(s==3){
+            var t=document.getElementById("screen").innerHTML= "APRIL"
+
+        }
+        else if(s==4){
+            var t=document.getElementById("screen").innerHTML= "MAY"
+
+        }
+        else if(s==5){
+            var t=document.getElementById("screen").innerHTML= "JUNE"
+
+        }
+        else if(s==6){
+            var t=document.getElementById("screen").innerHTML= "JULY"
+
+        }
+        else if(s==7){
+            var t=document.getElementById("screen").innerHTML= "AUGUST"
+
+        }
+        else if(s==8){
+            var t=document.getElementById("screen").innerHTML= "SEPTEMBER"
+
+        }
+        else if(s==9){
+            var t=document.getElementById("screen").innerHTML= "OCTOBER"
+
+        }
+        else if(s==10){
+            var t=document.getElementById("screen").innerHTML= "NOVEMBER"
+
+        }
+        else if(s==11){
+            var t=document.getElementById("screen").innerHTML= "DECEMBER"
+
+        }
+
+
+     }
+    
+
+
+
+    </script>
+</body>
+</html>

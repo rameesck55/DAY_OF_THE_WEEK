@@ -1,0 +1,38 @@
+*{
+    background-color: rgb(240, 136, 176);
+}
+h1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+}
+h3{
+    text-align: center;
+    color: rgb(1, 43, 107);
+    font-size: 35px;
+}
+button{
+    color: antiquewhite;
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-color: rgb(7, 192, 38);
+    border: 5px solid white;
+    align-items: center;
+    margin-left: 140px;
+    margin-top: 28px;
+    font-size:25px ;
+    padding-left: 10px;
+}
+.button{
+    margin-left: 100px;
+}
+button:hover{
+    color: yellowgreen;
+    border-color: aqua;
+    height: 100px;
+    width: 100px;
+
+}
+
